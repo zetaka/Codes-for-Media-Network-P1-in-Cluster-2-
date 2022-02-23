@@ -12,34 +12,47 @@
 		以下の値を入力して下さい．<br>
 
 		<form method="post" action="./enq.php">
-			<p>
-				<label>氏名</label>:
-				<br>
-				<input type="text" name="name">
-			</p>
+			// 入力フォームを 表形式(table) に整形する
+			<table>
+				<tr>
+					<td>
+						<label>氏名</label>:
+					</td>
+					<td>
+						<input type="text" name="name">
+					</td>
+				</tr>
 
-			<p>
-				<label>所属プログラム</label>:
-				<br>
-				<input type="radio" name="prog" value="md" selected>
-					メディア情報学 <br>
-				<input type="radio" name="prog" value="ke">
-					経営情報学 <br>
-				<input type="radio" name="prog" value="sc">
-					セキュリティ情報 <br>学
-				<input type="radio" name="prog" value="et">
-					その他
-			</p>
+				</tr>
+					<td>
+						<label>所属プログラム</label>:
+					</td>
+					<td>
+						<input type="radio" name="prog" value="md" selected>
+							メディア情報学 <br>
+						<input type="radio" name="prog" value="ke">
+							経営情報学 <br>
+						<input type="radio" name="prog" value="sc">
+							セキュリティ情報 <br>学
+						<input type="radio" name="prog" value="et">
+							その他
+					</td>
+				</tr>
 
-			<p>
-				<label>大学生協食堂で一番好きなメニュ</label>:
-				<br>
-				<select name="menu">
-					<option value="co" selected>チキンおろしだれ</option>
-					<option value="cm">クリームチーズメンチカツ</option>
-					<option value="kc">カツカレー</option>
-				</select>
-			</p>
+				</tr>
+				<tr>
+					<td>
+						<label>大学生協食堂で一番好きなメニュ</label>:
+					</td>
+					<td>
+						<select name="menu">
+							<option value="co" selected>チキンおろしだれ</option>
+							<option value="cm">クリームチーズメンチカツ</option>
+							<option value="kc">カツカレー</option>
+						</select>
+					</td>
+				</tr>
+			</table>
 
 			<input type="submit" value="送信">
 			<input type="reset" value="やり直す">
