@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ja">
+	<head>
+		<meta charset="utf-8">
+		<title>アンケートフォーム</title>
+	</head>
+
+	<body>
+		<h1>
+			アンケートフォーム
+		</h1>
+		以下の値を入力して下さい．<br>
+
+		<form method="post" action="./enq.php">
+			<p>
+				<label>氏名</label>:
+				<br>
+				<input type="text" name="name">
+			</p>
+
+			<p>
+				<label>所属プログラム</label>:
+				<br>
+				<input type="radio" name="prog" value="md" selected>
+					メディア情報学 <br>
+				<input type="radio" name="prog" value="ke">
+					経営情報学 <br>
+				<input type="radio" name="prog" value="sc">
+					セキュリティ情報 <br>学
+				<input type="radio" name="prog" value="et">
+					その他
+			</p>
+
+			<p>
+				<label>大学生協食堂で一番好きなメニュ</label>:
+				<br>
+				<select name="menu">
+					<option value="co" selected>チキンおろしだれ</option>
+					<option value="cm">クリームチーズメンチカツ</option>
+					<option value="kc">カツカレー</option>
+				</select>
+			</p>
+
+			<input type="submit" value="送信">
+			<input type="reset" value="やり直す">
+		</form>
+
+		<p>
+			<small>
+				&copy; Copyright 2021, Media Network
+			</small>
+		</p>
+
+	</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ja">
+	<head>
+		<meta charset="utf-8">
+		<title>HTML5の機能を利用したフォーム例</title>
+	</head>
+
+	<body>
+		<h1>
+			フォームにおける新要素のサンプル
+		</h1>
+
+		<form method="post" action="./enq.php">
+			<ul>
+				<li>学籍番号：<input type="text" name="id" placeholder="半角数字" autocomplete="on" pattern="^[0-9]+$" required="">
+				<li>パスワード：<input type="text" name="pw" placeholder="半角英数字と!,?" autocomplete="off" pattern="^[0-9a-zA-Z\?\!]+$" required>
+			</ul>
+			<input type="submit" value="送信"
+		</form>
+
+	</body>
+</html>
